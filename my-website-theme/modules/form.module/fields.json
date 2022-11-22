@@ -1,0 +1,16 @@
+[ {
+  "id" : "1a746a84-b325-2c64-fa05-ee0b06ab556d",
+  "name" : "form_field",
+  "display_width" : null,
+  "label" : "Form",
+  "required" : false,
+  "locked" : false,
+  "type" : "form",
+  "default" : {
+    "form_id" : "451da47b-7b78-4934-b087-fbcfd2d88a55",
+    "response_type" : "inline",
+    "message" : "<p>Thanks for submitting the form!</p>\n<p>We will contact you as soon as possible!</p>",
+    "gotowebinar_webinar_key" : null,
+    "form_type" : "HUBSPOT"
+  }
+} ]

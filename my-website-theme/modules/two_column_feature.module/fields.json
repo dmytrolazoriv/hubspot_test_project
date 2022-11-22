@@ -1,0 +1,44 @@
+[ {
+  "id" : "45a9eec5-ff9a-9759-636f-e3f340adff81",
+  "name" : "feature_text",
+  "display_width" : null,
+  "label" : "Rich text",
+  "required" : false,
+  "locked" : false,
+  "type" : "richtext",
+  "default" : "Cats are so amazing!"
+}, {
+  "id" : "43709534-a186-88ef-159b-7d10786e5824",
+  "name" : "feature_image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://26616967.fs1.hubspotusercontent-eu1.net/hubfs/26616967/6.jpg",
+    "alt" : "6",
+    "loading" : "lazy",
+    "width" : 300,
+    "height" : 300,
+    "max_width" : 300,
+    "max_height" : 300
+  }
+}, {
+  "id" : "4c6beed9-5d5f-1638-37ed-7051694700f7",
+  "name" : "choice_field",
+  "display_width" : null,
+  "label" : "Choice",
+  "required" : false,
+  "locked" : false,
+  "display" : "select",
+  "choices" : [ [ "img-right", "Image Right" ], [ "img-left", "Image Left" ] ],
+  "multiple" : false,
+  "reordering_enabled" : true,
+  "type" : "choice",
+  "default" : "img-right"
+} ]

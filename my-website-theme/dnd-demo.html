@@ -1,0 +1,73 @@
+<!--
+templateType: page
+isAvailableForNewContent: true
+-->
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="{{ page_meta.meta_description }}">
+        <title>{{ page_meta.html_title }}</title>
+        {% if site_settings.favicon_src %}
+           <link rel="shortcut icon" href="{{ site_settings.favicon_src }}">
+        {% endif %}
+
+        {{ require_css(get_asset_url('./objects/_layout.css')) }}
+
+        {{ standard_header_includes }}
+    </head>
+
+    <body>
+        {% dnd_area 'no_structure', label="No Structure"%}
+        {% end_dnd_area %}
+      
+       {% dnd_area "little_structure", label="Some Structure" %}
+            {% dnd_section background_color={
+                r: 100,
+                g: 100,
+                b: 100,
+                a: 1
+            }, padding={
+            top: 100,
+            bottom: 100,
+            right: 100,
+            left: 100
+            } %}
+            {% end_dnd_section %}
+        {% end_dnd_area %}
+      
+        {% dnd_area "more_structure", label="More Structure" %}
+            {% dnd_section background_color={
+                r: 200,
+                g: 200,
+                b: 200,
+                a: 1
+            }, padding={
+            top: 100,
+            bottom: 100,
+            right: 100,
+            left: 100
+            }, vertical_alignment="MIDDLE" %}
+      
+              {% dnd_column width=4 %}
+              {% dnd_row %}
+                  {% dnd_module "image" path="@hubspot/image", flexbox_positioning="MIDDLE_CENTER", label="Feature Image" %}
+                  {% end_dnd_module %}
+              {% end_dnd_row %}
+              {% end_dnd_column %}
+      
+          {% dnd_column width=8, offset=4 %}
+                {% dnd_row %}
+                  {% dnd_module "rich_text" path="@hubspot/rich_text", label="Feature Text" %}
+                  {% end_dnd_module %}
+              {% end_dnd_row %}
+          {% end_dnd_column %}
+      
+            
+            {% end_dnd_section %}
+        {% end_dnd_area %}
+
+        {{ standard_footer_includes }}
+    </body>
+
+    </html>

@@ -1,0 +1,14 @@
+defaultPortal: d_dexterity
+portals:
+  - name: d_dexterity
+    portalId: 26616967
+    authType: personalaccesskey
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CMfV5ovKMBIJAA0AAAAA4A0DGIfJ2Awg8rOAFyju6QwyFCtbWihtL4ASlEBv1EI3MLhjmLCqOjcAAARBAAAAeAAAAAAAAAAAAAAAAAAAAAQAAMAHAP7_MTwAAAYAAABgAAAAAAAAAAAAAAAAADACQhTwySpIuFDHs_-ybJkKaSmW_v9X_koDZXUxUgBaAA
+        expiresAt: '2022-11-22T22:33:36.203Z'
+    personalAccessKey: >-
+      CiRldTEtMzg1NS0xMDNlLTRmZWEtODAxMS1jODRmNjFlMmU1NTQQh8nYDBjys4AXKhkABeaRgn-6DOQTYTA979nimrHPuXU1KjnNSgNldTE
+    sandboxAccountType: null
+    parentAccountId: null

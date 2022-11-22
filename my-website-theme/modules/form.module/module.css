@@ -1,0 +1,21 @@
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.input-wrapper {
+  margin-right: 10px;
+}
+
+.submit-wrapper {
+  display: flex;
+  max-width: 25%;
+}
+
+.input-wrapper input[type="submit"] {
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: #4D0099;
+  border: none;
+}

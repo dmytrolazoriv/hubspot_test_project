@@ -1,0 +1,29 @@
+<!--
+    templateType: page
+    label: Page template
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ content.html_title }}</title>
+    <meta name="description" content="{{ content.meta_description }}">
+    {{ standard_header_includes }}
+  </head>
+  <body>
+
+  <h1>This headline is static :(</h1>  
+  {% module_block module "main_content" path="@hubspot/rich_text", label="Main content" %}
+    {% module_attribute "html" %}
+      <h2>This is headline is not static</h2>
+      <p>This paragraph isn't static either!</p>
+    {% end_module_attribute %}
+  {% end_module_block %}
+    
+
+    {% module "page_template_logo" path="@hubspot/logo" label="Logo" %}
+    {% module "page_template_rich_text" path="@hubspot/rich_text" label="Rich Text" %}
+    {{ standard_footer_includes }}
+  </body>
+</html>

@@ -1,0 +1,15 @@
+.two-col-feature {
+  display: flex;
+}
+
+.two-col-feature.img-left {
+  flex-direction: row-reverse;
+}
+
+.col {
+  width: 50%;
+}
+
+img {
+  max-width: 100%;
+}
